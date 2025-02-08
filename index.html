@@ -5,14 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Keerthi Kappera - Data & AI Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Add Font Awesome for social media icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <img src="images/Snapchat-1259854334~3.jpg" alt="Profile Picture" width="150" height="150">
-        <h1>Keerthi Kappera</h1>
-        <p>Data Science | AI | NLP | Machine Learning | Deep Learning</p>
+        <div class="profile-container">
+            <img src="https://raw.githubusercontent.com/KeerthiKappera/KeerthiKappera_Portfolio/main/images/Snapchat-1259854334.jpg" alt="Keerthi Kappera">
+            <h1>Keerthi Kappera</h1>
+            <p>Data Science | AI | NLP | Machine Learning | Deep Learning</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/keerthikappera/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/keerthikappera" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/keerthi_sriniv" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="" download><i class="fas fa-file-download"></i> Resume</a>
+            </div>
+        </div>
         <nav>
             <ul>
                 <li><a href="#projects">Projects</a></li>
@@ -24,13 +31,27 @@
 
     <section id="projects">
         <h2>Projects</h2>
-        <div>
-            <h3>Twitter Sentiment Analysis</h3>
-            <p>Used NLP and deep learning models to classify sentiments with 85% accuracy.</p>
+
+        <div class="project">
+            <h3>📌 Twitter Sentiment Analysis</h3>
+            <ul>
+                <li>Developed an NLP model to analyze sentiments in tweets (**Positive, Negative, Neutral**) with **85% accuracy**.</li>
+                <li>Implemented **LSTM-based deep learning model** for sentiment classification.</li>
+                <li>Handled data preprocessing (tokenization, stemming, stop-word removal) using **NLTK and Scikit-learn**.</li>
+                <li>Overcame challenges in sarcasm detection using **word embeddings (Word2Vec, GloVe)**.</li>
+                <li><a href="https://github.com/keerthikappera/Twitter-Sentiment-Analysis" target="_blank">View on GitHub</a></li>
+            </ul>
         </div>
-        <div>
-            <h3>COVID-19 Face Mask Detection</h3>
-            <p>Implemented a CNN-based detection model with OpenCV and TensorFlow.</p>
+
+        <div class="project">
+            <h3>😷 COVID-19 Face Mask Detection</h3>
+            <ul>
+                <li>Built a **real-time face mask detection system** using **CNNs & OpenCV**.</li>
+                <li>Achieved **92% accuracy** in distinguishing between masked and unmasked faces.</li>
+                <li>Optimized the model by augmenting dataset and fine-tuning **hyperparameters**.</li>
+                <li>Utilized **TensorFlow & Keras** for deep learning model training.</li>
+                <li><a href="https://github.com/keerthikappera/COVID19-Face-Mask-Detection" target="_blank">View on GitHub</a></li>
+            </ul>
         </div>
     </section>
 
@@ -40,21 +61,17 @@
             <li>Python, SQL, TensorFlow, Scikit-learn</li>
             <li>Natural Language Processing (NLP)</li>
             <li>Machine Learning & Deep Learning</li>
+            <li>Data Visualization (Matplotlib, Seaborn, Power BI)</li>
+            <li>Cloud Platforms: AWS, Google Cloud</li>
+            <li>Certifications: NHI Construction Inspection, OSHA30, CMIT</li>
         </ul>
     </section>
 
     <section id="contact">
         <h2>Contact</h2>
-        <!-- Add icons instead of text -->
-        <p>
-            <a href="https://www.linkedin.com/in/keerthikappera/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/keerthi_sriniv/" target="_blank"><i class="fab fa-instagram"></i></a>
-        </p>
-        <p>Email: keerthikappera@gmail.com</p>
-        
-        <!-- Button to download resume -->
-        <p><a href="images/Keerthi_Kappera_RESUME_KK.pdf" download><button>Download Resume</button></a></p>
-        <p>Location: West Haven, CT, USA</p>
+        <p>📧 Email: keerthikappera@gmail.com</p>
+        <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/keerthikappera/" target="_blank">linkedin.com/in/keerthikappera</a></p>
+        <p>🐱 GitHub: <a href="https://github.com/keerthikappera" target="_blank">github.com/keerthikappera</a></p>
     </section>
 </body>
 </html>
