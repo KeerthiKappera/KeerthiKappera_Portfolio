@@ -1,162 +1,103 @@
-/* Set the general page background and text styles */
+/* General Page Styling */
 body {
-    background-color: black;
-    color: white;
-    font-family: "Times New Roman", Times, serif;
-    margin: 0;
-    padding: 0;
-    animation: fadeIn 2s ease-in-out;  /* Fade-in animation on page load */
-}
-
-/* Animation for fading in */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-/* Header styling */
-header {
+    background-color: #000;  /* Black Background */
+    color: white;  /* White Text */
+    font-family: "Times New Roman", serif;
     text-align: center;
-    padding: 50px 20px;
-    animation: slideIn 1s ease-out; /* Slide-in animation for header */
 }
 
-/* Slide-in animation for header */
-@keyframes slideIn {
-    0% {
-        transform: translateY(-100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+/* Profile Section */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
 }
 
-/* Profile Image */
-header img {
-    width: 150px;
+.profile-container img {
+    width: 150px;  /* Set Image Size */
     height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    animation: zoomIn 2s ease-in-out; /* Zoom-in effect on the profile picture */
+    border-radius: 50%;  /* Makes it Circular */
+    border: 3px solid white;
 }
 
-/* Zoom-in animation */
-@keyframes zoomIn {
-    0% {
-        transform: scale(0.8);
-        opacity: 0;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
+.profile-container h1 {
+    margin-top: 10px;
 }
 
-/* Navigation styling */
+/* Social Icons */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: lightblue;
+}
+
+/* Navigation Bar */
 nav ul {
     list-style-type: none;
     padding: 0;
 }
 
 nav ul li {
-    display: inline-block;
-    margin: 10px 20px;
+    display: inline;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    text-transform: uppercase;
-    transition: color 0.3s ease;
 }
 
-/* Hover effect for navigation links */
 nav ul li a:hover {
-    color: #ff6347; /* Color changes on hover */
-}
-
-/* Section Styling */
-section {
-    padding: 30px 20px;
-    margin-top: 40px;
-    text-align: center;
-    animation: fadeInUp 1s ease-out;
-}
-
-/* Fade-up animation for sections */
-@keyframes fadeInUp {
-    0% {
-        transform: translateY(50px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-/* Project section styling */
-section#projects {
-    background-color: #333;
-    border-radius: 10px;
-    padding: 40px;
-}
-
-/* Skills section styling */
-section#skills {
-    background-color: #444;
-    border-radius: 10px;
-    padding: 40px;
-}
-
-/* Contact section styling */
-section#contact {
-    background-color: #555;
-    border-radius: 10px;
-    padding: 40px;
-}
-
-/* Styling for headings */
-h1, h2, h3 {
-    margin: 10px 0;
-    font-size: 2rem;
-}
-
-/* Paragraph styling */
-p {
-    font-size: 1.1rem;
-}
-
-/* Styling for the contact links */
-a {
-    color: #ff6347; /* Use a vibrant color for links */
-    text-decoration: none;
-}
-
-a:hover {
     text-decoration: underline;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    header img {
-        width: 120px;
-        height: 120px;
-    }
+/* Projects & Skills Section */
+.project, #skills {
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+}
 
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
+.project ul, #skills ul {
+    list-style-type: "✔";  /* Custom Bullet Points */
+    padding-left: 20px;
+}
 
-    section {
-        padding: 20px;
-    }
+.project li, #skills li {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+/* Project Titles */
+.project h3 {
+    color: #f4f4f4;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+/* Project GitHub Links */
+.project a {
+    color: #1e90ff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section */
+#contact {
+    margin-top: 40px;
 }
