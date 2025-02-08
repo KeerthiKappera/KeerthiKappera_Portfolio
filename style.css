@@ -70,7 +70,7 @@ nav ul li a:hover {
 }
 
 .project ul, #skills ul {
-    list-style-type: "✔";  /* Custom Bullet Points */
+    list-style-type: "•";  /* Custom Bullet Points */
     padding-left: 20px;
 }
 
