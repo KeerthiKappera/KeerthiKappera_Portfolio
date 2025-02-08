@@ -1,22 +1,53 @@
+/* Apply a black background and white text color to the entire webpage */
 body {
-    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
     margin: 0;
     padding: 0;
-    text-align: center;
 }
+
+/* Center align the content in the header */
 header {
-    background-color: #0073b1;
-    color: white;
+    text-align: center;
     padding: 20px;
 }
+
+/* Styling for the profile image */
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Styling for headers and paragraphs */
+h1, h2, h3, p {
+    margin: 10px 0;
+}
+
+/* Style the navigation menu */
 nav ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
+
 nav ul li {
     display: inline;
     margin: 0 10px;
 }
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Padding for sections */
 section {
     padding: 20px;
+}
+
+/* Styling for sections */
+section#projects, section#skills, section#contact {
+    margin-top: 20px;
 }
