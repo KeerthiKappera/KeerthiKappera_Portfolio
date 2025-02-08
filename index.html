@@ -3,72 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keerthi Kappera - Data & AI Portfolio</title>
+    <title>Keerthi Kappera - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div class="profile-container">
-            <img src="https://raw.githubusercontent.com/KeerthiKappera/KeerthiKappera_Portfolio/main/images/Snapchat-1259854334~3.jpg" alt="Keerthi Kappera">
-            <h1>Keerthi Kappera</h1>
-            <p>Data Science | AI | NLP | Machine Learning | Deep Learning</p>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/keerthikappera/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/keerthikappera" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.instagram.com/keerthi_sriniv" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="images/Keerthi_Kappera_RESUME_KK.pdf" download><i class="fas fa-file-download"></i> Resume</a>
+
+    <!-- Cover Page -->
+    <section id="home">
+        <div class="container">
+            <div class="profile">
+                <img src="https://raw.githubusercontent.com/KeerthiKappera/KeerthiKappera_Portfolio/main/images/Snapchat-1259854334.jpg" alt="Keerthi Kappera">
+                <h1>Hello, I'm Keerthi Srinivas Kappera 👋</h1>
+                <p>Data Science | AI | NLP | Machine Learning</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/keerthikappera/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/keerthikappera" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/YOUR_INSTAGRAM" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="resume.pdf" download><i class="fas fa-file-download"></i> Resume</a>
+                </div>
             </div>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="projects">
-        <h2>Projects</h2>
-
-        <div class="project">
-            <h3>📌 Twitter Sentiment Analysis</h3>
-            <ul>
-                <li> Developed an NLP model to analyze sentiments in tweets (**Positive, Negative, Neutral**) with **85% accuracy**.</li>
-                <li> Implemented **LSTM-based deep learning model** for sentiment classification.</li>
-                <li> Handled data preprocessing (tokenization, stemming, stop-word removal) using **NLTK and Scikit-learn**.</li>
-                <li> Overcame challenges in sarcasm detection using **word embeddings (Word2Vec, GloVe)**.</li>
-            </ul>
-        </div>
-
-        <div class="project">
-            <h3>😷 COVID-19 Face Mask Detection</h3>
-            <ul>
-                <li> Built a **real-time face mask detection system** using **CNNs & OpenCV**.</li>
-                <li> Achieved **92% accuracy** in distinguishing between masked and unmasked faces.</li>
-                <li> Optimized the model by augmenting dataset and fine-tuning **hyperparameters**.</li>
-                <li> Utilized **TensorFlow & Keras** for deep learning model training.</li>
-            </ul>
+            <!-- Navigation Icons -->
+            <nav class="nav-menu">
+                <a href="#about"><i class="fas fa-user"></i> About</a>
+                <a href="#projects"><i class="fas fa-code"></i> Projects</a>
+                <a href="#skills"><i class="fas fa-chart-line"></i> Skills</a>
+                <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+            </nav>
         </div>
     </section>
 
-    <section id="skills">
-        <h2>Skills & Certifications</h2>
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a Data Scientist with expertise in NLP, Deep Learning, and AI-driven solutions.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
         <ul>
-            <li> Python, SQL, TensorFlow, Scikit-learn</li>
-            <li> Natural Language Processing (NLP)</li>
-            <li> Machine Learning & Deep Learning</li>
-            <li> Data Visualization (Matplotlib, Seaborn, Power BI)</li>
-            <li> Cloud Platforms: AWS, Google Cloud</li>
+            <li>📌 <strong>Twitter Sentiment Analysis</strong> - NLP model with LSTM achieving 85% accuracy.</li>
+            <li>😷 <strong>COVID-19 Face Mask Detection</strong> - CNN-based detection with OpenCV.</li>
         </ul>
     </section>
 
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python, SQL, TensorFlow, Scikit-learn</li>
+            <li>Natural Language Processing (NLP)</li>
+            <li>Machine Learning & Deep Learning</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
     <section id="contact">
         <h2>Contact</h2>
-        <p>📧 Email: keerthikappera@gmail.com</p>
-        <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/keerthikappera/" target="_blank">linkedin.com/in/keerthikappera</a></p>
-        <p>🐱 GitHub: <a href="https://github.com/keerthikappera" target="_blank">github.com/keerthikappera</a></p>
+        <p>Email: keerthikappera@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/keerthikappera/">linkedin.com/in/keerthikappera</a></p>
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
