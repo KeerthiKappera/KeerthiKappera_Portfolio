@@ -3,6 +3,7 @@ body {
     font-family: Times New Roman;
     background-color: black;
     color: white;
+    text-align: center;
     scroll-behavior: smooth;
 }
 
@@ -30,37 +31,24 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* General Section Styling */
+/* Resume button styling */
+.resume-btn {
+    background-color: #ff5722;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Section Styling */
 section {
     padding: 60px 20px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
-/* About Me - Center Alignment */
-#about {
-    text-align: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
-
-/* Projects and Skills - Align Left */
-#projects, #skills {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;  /* Align content to the left */
-    text-align: left;
-    padding-left: 10%;  /* Adds spacing from the left edge */
-}
-
-/* Styling for Hero Section (Home) */
-.hero {
-    text-align: center;
-}
-
+/* Hero Image */
 .hero img {
     width: 150px;
     height: 150px;
@@ -78,28 +66,39 @@ section {
     color: #ccc;
 }
 
-/* Bullet Points for Lists */
-section ul {
-    list-style-type: disc;
-    margin-left: 0;
-    padding-left: 40px;
-    color: #ccc;
+/* About Section Centering */
+#about {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-section ul li {
-    margin-bottom: 10px;
+#about ul {
+    display: inline-block;
+    text-align: left;
 }
 
-/* Project Images - Side by Side */
+/* Projects and Skills to the Left */
+#projects, #skills {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Bullet Points Fix */
+ul {
+    padding-left: 20px;
+}
+
+/* Images Side by Side */
 .project-images {
     display: flex;
-    justify-content: flex-start;
-    gap: 20px;
-    margin-top: 20px;
-    padding-left: 10%;
+    justify-content: center;
+    gap: 15px;
 }
 
 .project-images img {
-    width: 45%;
-    border-radius: 10px;
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
 }
