@@ -1,11 +1,10 @@
-/* General Styles */
+/* Basic Style */
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif; /* Ensure Roboto is used */
-    background-color: #222; /* Darker background for better contrast */
-    color: white;
-    text-align: center;
-    scroll-behavior: smooth; /* Smooth scrolling */
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    scroll-behavior: smooth;
 }
 
 /* Navigation Menu */
@@ -15,10 +14,7 @@ nav ul {
     display: flex;
     justify-content: center;
     background-color: #333;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 100;
+    margin: 0;
 }
 
 nav ul li {
@@ -30,11 +26,6 @@ nav ul li a {
     text-decoration: none;
     padding: 14px 20px;
     display: block;
-}
-
-nav ul li a.active {
-    background-color: #575757;
-    border-radius: 5px;
 }
 
 nav ul li a:hover {
@@ -58,12 +49,13 @@ nav ul li a:hover {
 }
 
 .hero-img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
+    width: 150px; /* Adjusted for larger profile picture */
+    height: 150px; /* Ensures it's a perfect square */
+    border-radius: 50%; /* Makes the image circular */
+    border: 5px solid white; /* Adds a clean white border around the image */
+    object-fit: cover; /* Ensures the image covers the circular area without stretching */
     margin-bottom: 20px;
-    border: 3px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: Adds a subtle shadow to give depth */
 }
 
 h1 {
@@ -84,66 +76,72 @@ h1 {
     background-color: #4682b4;
 }
 
-/* Section Styling */
-section {
-    padding: 60px 20px;
-    margin-top: -60px;
-    animation: fadeIn 2s ease-in;
-}
-
-h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-/* Fade-in Animation */
-.fade-in {
-    animation: fadeIn 2s ease-in;
-}
-
-/* Scroll Effect */
+/* Animation */
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
-/* Resume Button */
-.resume-btn {
-    background-color: #1e90ff;
-    padding: 10px 20px;
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
+/* About Section */
+#about {
+    padding: 40px;
+    text-align: center;
+}
+
+#about ul {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-left: 20px;
+}
+
+/* Projects Section */
+#projects {
+    padding: 40px;
+    text-align: center;
+}
+
+.project-images {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.project-images img {
+    width: 300px;
+    height: auto;
     border-radius: 5px;
 }
 
-.resume-btn:hover {
-    background-color: #4682b4;
-}
-
 /* Skills Section */
-ul {
-    list-style-type: none;
-    padding: 0;
+#skills {
+    padding: 40px;
+    text-align: center;
 }
 
-ul li {
-    margin: 10px 0;
-    font-size: 1.2em;
+#skills ul {
+    list-style-type: disc;
+    text-align: left;
+    padding-left: 20px;
+    display: inline-block;
+    margin: 0 auto;
 }
 
 /* Contact Section */
-#contact a {
-    color: #1e90ff;
-    text-decoration: none;
+#contact {
+    padding: 40px;
+    text-align: center;
 }
 
-#contact a:hover {
-    text-decoration: underline;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .hero-content {
+        max-width: 90%;
+    }
 }
