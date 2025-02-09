@@ -31,7 +31,7 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* Resume button styling */
+/* Resume Button Styling */
 .resume-btn {
     background-color: #ff5722;
     padding: 10px;
@@ -48,36 +48,6 @@ section {
     justify-content: center;
 }
 
-/* Hero Image */
-.hero img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 3px solid white;
-    margin-bottom: 20px;
-}
-
-.hero h1 {
-    margin: 10px 0;
-}
-
-.hero p {
-    font-size: 1.2em;
-    color: #ccc;
-}
-
-/* About Section Centering */
-#about {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-#about ul {
-    display: inline-block;
-    text-align: left;
-}
-
 /* Projects and Skills to the Left */
 #projects, #skills {
     text-align: left;
@@ -85,16 +55,17 @@ section {
     margin: 0 auto;
 }
 
-/* Bullet Points Fix */
+/* Bullet Points Properly Aligned */
 ul {
     padding-left: 20px;
 }
 
-/* Images Side by Side */
+/* Project Images - Side by Side */
 .project-images {
     display: flex;
     justify-content: center;
     gap: 15px;
+    margin-top: 15px;
 }
 
 .project-images img {
