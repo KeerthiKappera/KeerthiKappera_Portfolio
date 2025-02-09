@@ -31,21 +31,14 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* Resume Button Styling */
-.resume-btn {
-    background-color: #ff5722;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-/* Section Styling */
-section {
-    padding: 60px 20px;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+/* LinkedIn-style Profile Picture */
+.hero img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid white;
+    object-fit: cover;
+    margin-bottom: 15px;
 }
 
 /* Projects and Skills to the Left */
