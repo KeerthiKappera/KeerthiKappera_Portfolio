@@ -1,10 +1,19 @@
-// Smooth scroll for navigation links
-const links = document.querySelectorAll("nav ul li a");
-links.forEach(link => {
-    link.addEventListener("click", function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute("href").slice(1);
-        const targetElement = document.getElementById(targetId);
-        targetElement.scrollIntoView({ behavior: "smooth" });
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href').substring(1);  // Get section id without "#"
+            
+            // Hide all sections
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.add('hidden');
+            });
+            
+            // Show the clicked section
+            document.getElementById(targetId).classList.remove('hidden');
+        });
     });
 });
