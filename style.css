@@ -12,8 +12,10 @@ body {
 nav {
     position: fixed;
     width: 100%;
+    display: flex;
+    justify-content: center;
     background-color: #333;
-    padding: 10px 0;
+    padding: 15px 0;
     top: 0;
     z-index: 1000;
 }
@@ -34,38 +36,22 @@ nav ul li a {
     text-decoration: none;
     padding: 14px 20px;
     display: block;
-    font-size: 16px;
-}
-
-nav ul li a:hover {
-    background-color: #575757;
-    border-radius: 5px;
-}
-/* Navbar Styling */
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: #333;
-    padding: 15px 0;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
     font-size: 18px;
     transition: 0.3s ease;
 }
 
-nav a:hover {
+nav ul li a:hover {
     color: #FFD700; /* Gold color effect */
+    background-color: #575757;
+    border-radius: 5px;
 }
 
 /* Section Styling */
 section {
-    padding: 50px;
+    padding: 60px 20px;
     max-width: 900px;
     margin: auto;
+    display: none; /* Hidden initially */
 }
 
 /* Bullet Alignment */
@@ -107,6 +93,7 @@ p {
     font-size: 1.2rem;
 }
 
+/* CTA Button */
 .cta-btn {
     background-color: #1e90ff;
     padding: 10px 20px;
@@ -120,12 +107,6 @@ p {
 
 .cta-btn:hover {
     background-color: #4682b4;
-}
-
-/* Sections */
-section {
-    padding: 60px 20px;
-    display: none; /* Hidden initially */
 }
 
 /* Fade-in Effect */
