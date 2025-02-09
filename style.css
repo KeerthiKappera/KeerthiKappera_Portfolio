@@ -1,7 +1,8 @@
+/* General Styles */
 body {
     margin: 0;
-    font-family: Times New Roman;
-    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    background-color: #222; /* Darker background for better contrast */
     color: white;
     text-align: center;
     scroll-behavior: smooth;
@@ -26,12 +27,28 @@ nav ul li a {
     display: block;
 }
 
+/* Active link state */
+nav ul li a.active {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
 nav ul li a:hover {
     background-color: #575757;
     border-radius: 5px;
 }
 
-/* LinkedIn-style Profile Picture */
+/* Navigation Menu - Mobile Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Hero Image */
 .hero img {
     width: 120px;
     height: 120px;
@@ -39,36 +56,35 @@ nav ul li a:hover {
     border: 3px solid white;
     object-fit: cover;
     margin-bottom: 15px;
+    max-width: 30vw; /* Make the image responsive */
 }
 
-/* Projects and Skills to the Left */
+/* Section Styling */
+section {
+    padding-top: 60px;
+    margin-top: -60px; /* Compensate for the fixed navigation bar */
+}
+
 #projects, #skills {
     text-align: left;
-    max-width: 800px;
+    max-width: 90%;
     margin: 0 auto;
+    padding: 20px;
 }
 
-/* Bullet Points Properly Aligned */
-/* Bullet Points Properly Aligned */
 #skills ul {
     list-style-type: disc;
     text-align: left;
     padding-left: 20px;
-    display: block; /* Ensures proper list alignment */
-    margin: 0 auto; /* Centers the list */
-}
-
-#skills {
-    text-align: center; /* Keeps the heading centered */
-}
-
-#skills ul {
-    text-align: left;
-    display: inline-block;
+    display: block;
     margin: 0 auto;
 }
 
-/* Project Images - Side by Side */
+#skills ul li {
+    margin-bottom: 10px; /* Add space between skills */
+}
+
+/* Projects Images - Side by Side */
 .project-images {
     display: flex;
     justify-content: center;
@@ -77,7 +93,18 @@ nav ul li a:hover {
 }
 
 .project-images img {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     height: auto;
     border-radius: 5px;
+}
+
+/* Contact Section - Links */
+#contact a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
 }
