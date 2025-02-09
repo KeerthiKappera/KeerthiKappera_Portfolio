@@ -49,8 +49,12 @@ nav ul li a:hover {
 }
 
 /* Bullet Points Properly Aligned */
+/* Bullet Points Properly Aligned */
 ul {
-    padding-left: 20px;
+    list-style-type: disc;
+    padding-left: 40px;
+    text-align: left;
+    display: inline-block;
 }
 
 /* Project Images - Side by Side */
