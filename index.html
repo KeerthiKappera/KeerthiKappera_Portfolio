@@ -20,24 +20,23 @@
         </ul>
     </nav>
 
-    <!-- Home Section -->
-    <section id="home">
-        <div class="hero">
-            <img src="images/Snapchat-1259854334~3.jpg" alt="Keerthi Kappera">
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <img src="images/Snapchat-1259854334~3.jpg" alt="Keerthi Kappera" class="hero-img">
             <h1>Hello, I'm Keerthi Srinivas Kappera 👋</h1>
             <p>Data Science | AI | NLP | Machine Learning</p>
-            <a href="#about" class="cta-btn">Learn More</a>
+            <div class="hero-buttons">
+                <a href="#about" class="cta-btn">Learn More</a>
+                <a href="#contact" class="cta-btn">Get in Touch</a>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="hidden">
+    <section id="about" class="hidden fade-in">
         <h2>The Person Behind the Projects</h2>
-        <p>
-            I am a passionate Data Scientist specializing in Natural Language Processing (NLP), Machine Learning, and Artificial Intelligence (AI). 
-            With a solid foundation in both the theoretical and practical aspects of data science, I leverage advanced algorithms and technologies 
-            to deliver impactful insights and solutions.
-        </p>
+        <p>I am a passionate Data Scientist specializing in Natural Language Processing (NLP), Machine Learning, and Artificial Intelligence (AI). With a solid foundation in both theoretical and practical aspects of data science, I leverage advanced algorithms and technologies to deliver impactful insights and solutions.</p>
         <ul>
             <li>Natural Language Processing (NLP)</li>
             <li>Machine Learning & Deep Learning</li>
@@ -48,21 +47,13 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="hidden">
+    <section id="projects" class="hidden fade-in">
         <h2>Projects</h2>
         <ul>
             <li>📌 <strong>Twitter Sentiment Analysis</strong>:
                 <ul>
                     <li><strong>Project Overview:</strong> Analyzing tweets to classify sentiment (positive, negative, or neutral) using AWS EC2 and Apache Airflow.</li>
                     <li><strong>Technologies Used:</strong> Python, AWS EC2, Apache Airflow, Logistic Regression, Naive Bayes, SVM, Random Forest.</li>
-                    <li><strong>Key Features:</strong> 
-                        <ul>
-                            <li>Data preprocessing (stop word removal, tokenization, stemming, lemmatization).</li>
-                            <li>Exploratory Data Analysis (EDA) for sentiment distribution insights.</li>
-                            <li>Trained and evaluated multiple ML models for sentiment classification.</li>
-                            <li>Deployed on AWS EC2 with Apache Airflow for automated processing.</li>
-                        </ul>
-                    </li>
                     <li><strong>Outcome:</strong> Achieved high accuracy in sentiment classification, providing valuable insights for brand monitoring and customer feedback analysis.</li>
                 </ul>
                 <div class="project-images">
@@ -70,12 +61,10 @@
                     <img src="images/tweet out.jpg" alt="Sentiment-Wise Tweet Length Distribution">
                 </div>
             </li>
-
             <li>😷 <strong>COVID-19 Face Mask Detection</strong>:
                 <ul>
                     <li><strong>Goal:</strong> Detect face masks on individuals in real-time.</li>
                     <li><strong>Technologies Used:</strong> Python, OpenCV, TensorFlow, CNN.</li>
-                    <li><strong>Key Features:</strong> Face mask detection, temperature scanning, automation.</li>
                     <li><strong>Outcome:</strong> 90% accuracy in detecting face mask usage.</li>
                 </ul>
                 <div class="project-images">
@@ -87,7 +76,7 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="hidden">
+    <section id="skills" class="hidden fade-in">
         <h2>Skills</h2>
         <ul>
             <li>💻 <strong>Programming Languages:</strong> Python, SQL, JavaScript</li>
@@ -99,7 +88,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="hidden">
+    <section id="contact" class="hidden fade-in">
         <h2>Contact</h2>
         <p>Email: keerthikappera@gmail.com</p>
         <p>LinkedIn: <a href="https://linkedin.com/in/keerthikappera" target="_blank">linkedin.com/in/keerthikappera</a></p>
