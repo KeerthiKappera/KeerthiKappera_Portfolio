@@ -41,6 +41,37 @@ nav ul li a:hover {
     background-color: #575757;
     border-radius: 5px;
 }
+/* Navbar Styling */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 15px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: #FFD700; /* Gold color effect */
+}
+
+/* Section Styling */
+section {
+    padding: 50px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Bullet Alignment */
+ul {
+    padding-left: 20px;
+}
 
 /* Hero Section */
 .hero-section {
