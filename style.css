@@ -50,11 +50,22 @@ nav ul li a:hover {
 
 /* Bullet Points Properly Aligned */
 /* Bullet Points Properly Aligned */
-ul {
+#skills ul {
     list-style-type: disc;
-    padding-left: 40px;
+    text-align: left;
+    padding-left: 20px;
+    display: block; /* Ensures proper list alignment */
+    margin: 0 auto; /* Centers the list */
+}
+
+#skills {
+    text-align: center; /* Keeps the heading centered */
+}
+
+#skills ul {
     text-align: left;
     display: inline-block;
+    margin: 0 auto;
 }
 
 /* Project Images - Side by Side */
