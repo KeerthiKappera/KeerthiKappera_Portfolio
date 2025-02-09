@@ -1,28 +1,27 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const navLinks = document.querySelectorAll('.nav-link');
-    const sections = document.querySelectorAll('section');
+document.addEventListener("DOMContentLoaded", function () {
+    // Select all nav links
+    const navLinks = document.querySelectorAll("nav a");
+    const sections = document.querySelectorAll("section");
 
-    // Function to hide all sections
-    function hideAllSections() {
+    // Function to show the clicked section and hide others
+    function showSection(event) {
+        event.preventDefault();  // Prevent default anchor behavior
+        const targetId = event.target.getAttribute("href").substring(1); // Get section ID
         sections.forEach(section => {
-            section.classList.remove('fade-in');
-            section.style.display = 'none';
+            section.style.display = section.id === targetId ? "block" : "none";
         });
+
+        // Scroll smoothly to the section
+        document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
     }
 
-    // Initially show only the hero section
-    hideAllSections();
-    document.getElementById('home').style.display = 'block';
-
-    // Add click event listeners to navigation links
+    // Attach event listeners to nav links
     navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href').substring(1);
-            hideAllSections();
-            const targetSection = document.getElementById(targetId);
-            targetSection.style.display = 'block';
-            targetSection.classList.add('fade-in');
-        });
+        link.addEventListener("click", showSection);
+    });
+
+    // Initially, show only the home section
+    sections.forEach(section => {
+        section.style.display = section.id === "home" ? "block" : "none";
     });
 });
