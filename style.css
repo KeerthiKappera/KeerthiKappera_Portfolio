@@ -1,19 +1,24 @@
 /* General Styles */
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif; /* Ensure Roboto is used */
     background-color: #222; /* Darker background for better contrast */
     color: white;
     text-align: center;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* Smooth scrolling */
 }
 
+/* Navigation Menu */
 nav ul {
     list-style-type: none;
     padding: 0;
     display: flex;
     justify-content: center;
     background-color: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
 }
 
 nav ul li {
@@ -27,7 +32,6 @@ nav ul li a {
     display: block;
 }
 
-/* Active link state */
 nav ul li a.active {
     background-color: #575757;
     border-radius: 5px;
@@ -38,68 +42,103 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* Navigation Menu - Mobile Responsiveness */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-    nav ul li {
-        margin: 10px 0;
-    }
+/* Hero Section */
+.hero-section {
+    background-color: #1d1d1d;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: fadeIn 2s ease-in;
 }
 
-/* Hero Image */
-.hero img {
+.hero-content {
+    max-width: 700px;
+}
+
+.hero-img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    border: 3px solid white;
     object-fit: cover;
-    margin-bottom: 15px;
-    max-width: 30vw; /* Make the image responsive */
+    margin-bottom: 20px;
+    border: 3px solid white;
+}
+
+h1 {
+    font-size: 3em;
+    margin-top: 20px;
+}
+
+.cta-btn {
+    background-color: #1e90ff;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.cta-btn:hover {
+    background-color: #4682b4;
 }
 
 /* Section Styling */
 section {
-    padding-top: 60px;
-    margin-top: -60px; /* Compensate for the fixed navigation bar */
+    padding: 60px 20px;
+    margin-top: -60px;
+    animation: fadeIn 2s ease-in;
 }
 
-#projects, #skills {
-    text-align: left;
-    max-width: 90%;
-    margin: 0 auto;
-    padding: 20px;
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
-#skills ul {
-    list-style-type: disc;
-    text-align: left;
-    padding-left: 20px;
-    display: block;
-    margin: 0 auto;
+/* Fade-in Animation */
+.fade-in {
+    animation: fadeIn 2s ease-in;
 }
 
-#skills ul li {
-    margin-bottom: 10px; /* Add space between skills */
+/* Scroll Effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-/* Projects Images - Side by Side */
-.project-images {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 15px;
-}
-
-.project-images img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
+/* Resume Button */
+.resume-btn {
+    background-color: #1e90ff;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
     border-radius: 5px;
 }
 
-/* Contact Section - Links */
+.resume-btn:hover {
+    background-color: #4682b4;
+}
+
+/* Skills Section */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+/* Contact Section */
 #contact a {
     color: #1e90ff;
     text-decoration: none;
