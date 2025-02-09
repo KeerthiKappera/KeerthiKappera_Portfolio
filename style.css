@@ -52,7 +52,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: flex-end;  /* Align content to the right */
-    text-align: right;
+    text-align: left;
     padding-right: 10%;  /* Adds spacing from the right edge */
 }
 
