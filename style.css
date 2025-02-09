@@ -1,9 +1,9 @@
 body {
     margin: 0;
-    font-family: Times New Roman, sans-serif;
+    font-family: Times New Roman;
     background-color: black;
     color: white;
-    text-align: center;
+    text-align: Right;
     scroll-behavior: smooth;
 }
 
@@ -59,12 +59,14 @@ section {
 
 section ul {
     list-style-type: disc;
-    margin-left: 20px;
+    margin-left: 0;  /* Remove excessive left margin */
+    padding-left: 20px;  /* Add proper padding to align bullets */
     color: #ccc;
 }
 
 section ul li {
     margin-bottom: 10px;
+    text-align: left;  /* Ensure the text aligns left */
 }
 
 .project-images {
@@ -78,3 +80,4 @@ section ul li {
     width: 45%;
     border-radius: 10px;
 }
+
